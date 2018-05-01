@@ -1,0 +1,30 @@
+---
+title: "R web"
+author: "wyy"
+date: "2016年10月14日"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r web}
+library(RCurl) 
+library(XML) 
+```
+
+## web
+```{r html}
+myHttpheader <- c( "User-Agent"="Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9.1.6) ", "Accept"="text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", "Accept-Language"="en-us", "Connection"="keep-alive", "Accept-Charset"="GB2312,utf-8;q=0.7,*;q=0.7") 
+url <- "https://book.douban.com/top250?icn=index-book250-all" 
+webpage <- getURL(url, httpheader=myHttpheader, encoding="gb2312") 
+pagetree <- htmlTreeParse(webpage, encoding="GB2312", error=function(...){}, useInternalNodes = TRUE,trim=TRUE) 
+node<-getNodeSet(pagetree, "//p[@class='pl']/text()") 
+info<-sapply(node,xmlValue) 
+info
+
+```
+

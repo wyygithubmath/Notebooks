@@ -1,0 +1,33 @@
+---
+title: "regularexpression"
+author: "wyy"
+date: "May 19, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Regular Expression
+
+### R library stringr
+```{r stringr}
+library(stringr)
+myStr <- "This is a string."
+```
+
+### R character classes
+- [:digit:] [:alpha:]
+- [:lower:] [:upper:]
+- [:alnum:]
+- [:punct:]
+
+### Methods
+#### str_extract(string, pattern) str_extract_all(string, pattern)
+
+```{r}
+str_extract(myStr, "is")
+```
+
+#### str_

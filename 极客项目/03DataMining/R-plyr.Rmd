@@ -1,0 +1,75 @@
+---
+title: "dply"
+output: html_notebook
+---
+
+# data processing
+
+## library
+> split-apply-combine
+
+```{r}
+library(plyr)
+```
+
+## import data
+```{r}
+df <- mtcars
+```
+## Info
+```{r}
+dim(df)
+colnames(df)
+# rownames(df)
+```
+
+
+
+## Basic
+### *ply
+>  ddply(.data, .variables, .fun = NULL, ..., .progress = "none", .inform = FALSE, .drop = TRUE, .parallel = FALSE, .paropts = NULL)
+
+|       | array | list  | table |   |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| array | aaply | alply | adply | a_ply |
+| list  | laply | llply | ldply | l_ply |
+| table | daply | dlply | ddply | d_ply |
+|       | maply | mlply | mdply | m_ply |
+
+> ddply ---> dplyr
+
+```{r}
+ddply(df, .(cyl, vs), each(nrow, ncol, max))
+```
+
+### functions
++ arrange
++ mutate
++ summarise
++ join match_df
++ colwise
++ rename
++ count
+
+```{r}
+arrange(df, cyl, disp)
+count(df, vars = "cyl")
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

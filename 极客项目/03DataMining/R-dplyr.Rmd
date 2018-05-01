@@ -1,0 +1,91 @@
+---
+title: "dply"
+output: html_notebook
+---
+
+# data processing
+
+## library
+```{r}
+library(dplyr)
+```
+
+## import data
+```{r}
+df <- read.csv("./train.csv")
+df_tb <- tbl_df(df)
+```
+## Info
+```{r}
+dim(df)
+colnames(df)
+```
+
+## basic
+1. subset
+```{r}
+filter(df_tb, Sex=='male' & Age >=70)
+```
+
+ + row
+```{r}
+slice(df_tb, 1:5)
+```
+ + column
+    1. start_with
+    2. end_with
+```{r}
+select(df_tb, Age)
+```
+ + group
+```{r}
+gb <- group_by(df_tb, Pclass)
+summarise(gb, sum(Age))
+group_size(gb)
+n_groups(gb)
+```
+ + count
+```{r}
+count(df_tb, Sex)
+tally(group_by(df_tb, Pclass))
+```
+
+
+2. order
+```{r}
+arrange(df_tb, Age)
+arrange(df_tb, desc(Pclass))
+```
+
+3. rename
+
+4. mutate transmute
+```{r}
+mutate(df_tb, my_age=runif(891,1,100))
+transmute(df_tb, my_age=runif(891,1,100))
+```
+
+5. distinct
+```{r}
+distinct(df_tb, Sex)
+```
+
+6. summarise
+```{r}
+summarise(df_tb, max(Age), min(Age))
+```
+
+7. sample
+```{r}
+sample_n(df_tb, 10, replace = TRUE)
+sample_frac(df_tb, 0.1)
+```
+
+
+
+
+
+
+
+
+

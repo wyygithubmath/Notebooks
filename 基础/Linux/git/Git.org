@@ -1,0 +1,56 @@
+# Git
+
+## 初始化
+```
+git init
+git status
+```
+## 暂存区添加文件
+```
+git add (filename or .)
+git commit -m or
+# 修改
+git --amend
+```
+## 提交日志
+```
+git log
+git log --pretty=short
+git log README.md
+git log -p
+git log --graph
+```
+
+## 查看差别
+```
+git diff
+git diff HEAD
+```
+## 分支操作
+```
+# 查看分支
+git branch
+#切换分支
+git chechout
+# 创建分支 并切换到分支
+git checkout -b feature-A
+or
+git branch feature-A  git checkout feature-A
+# 合并分支
+git checkout master
+git merge --no-ff feature-A
+```
+## 远程仓库
+- github 上创建同名仓库
+- 创建本地远程仓库
+```
+git remote add origin git@github.com:wyygithubmath/data.git
+```
+- 推送至远程仓库
+```
+git push origin master
+```
+## 从远程仓库获取
+```
+git clone git@github.com:wyygithubmath/data.git
+```

@@ -1,0 +1,47 @@
+---
+title: "R Baisc"
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+---
+
+# Data Structure
+| 向量 | 矩阵 | 数组 | 数据框 | 列表 |
+|:---:|:---:|:---:|:---:|:---:|
+
+## Definition
+```{r}
+vector1 <- c(1, 2, 5, 3, 6, -2, 4)
+vector2 <- c("one", "two", "three")
+vector3 <- c(TRUE, FALSE)
+
+matrix1 <- matrix(1:20, nrow = 5, ncol = 4, byrow = TRUE)
+
+patientID <- c(1, 2, 3, 4)
+age <- c(25, 34, 28, 52)
+diabetes <- c("Type1", "Type2", "Type1", "Type1")
+status <- c("Poor", "Improved", "Excellent", "Poor")
+patientdata <- data.frame(patientID, age, diabetes, status)
+
+diabetes <- factor(diabetes)
+status <- factor(status, ordered = TRUE, levels = c("Poor", "Improved", "Excellent"))
+
+
+```
+
+## Operations
+```{r}
+patientdata[1:2]
+patientdata$age
+table(patientdata$diabetes, patientdata$status)
+
+with(mtcars,
+     {
+       print(summary(mpg))
+       plot(mpg, disp)
+       plot(mpg, wt)
+       }
+     )
+```
+

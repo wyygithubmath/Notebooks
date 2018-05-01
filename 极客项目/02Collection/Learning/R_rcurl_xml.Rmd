@@ -1,0 +1,111 @@
+---
+title: "R Notebook"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+## Packages
+
+```{r}
+library(RCurl)
+library(XML)
+```
+
+## outlinear
+
++ basic function
+  1. getURL
+  2. getForm
+  3. postForm
+  4. getBinaryURL
+  
++ set XPath
+  1. /
+  2. //
+  3. @
+  4. *
+  5. @*
+  6. node
+  
+## debug function
+1. exisrs
+```{r}
+url.exists("http://www.baidu.com")
+```
+
+2. debugGatherer
+```{r}
+rm(list = ls())
+d = debugGatherer()
+html <-getURI("https://www.douban.com", debugfunction=d$update, verbose=TRUE)
+
+names(d$value())
+
+cat(d$value()[3])
+
+# cat(d$value()[1])
+```
+3. basicTextGatherer
+```{r}
+rm(list = ls())
+headers = basicTextGatherer()
+txt = getURL("http://www.baidu.com", header = TRUE, headerfunction = headers$update)
+headers$value()
+```
+4. basicHeaderGatherer
+```{r}
+rm(list = ls())
+headers <- basicHeaderGatherer()
+txt <- getURL("http://www.baidu.com", header = TRUE, headerfunction = headers$update)
+
+headers$value()
+```
+5. getCurlHandle
+```{r}
+rm(list = ls())
+curl <- getCurlHandle()
+d <- getURL("https://www.douban.com", curl = curl)
+getCurlInfo(curl)
+```
+
+
+## main
+1. headers
+```{r}
+myheaders <- c()
+```
+
+2. getURL
+```{r}
+rm(list = ls())
+myurl <- "http://www.baidu.com"
+webpage <- getURL(myurl)
+```
+
+3. getForm
+```{r}
+rm(list = ls())
+chara = c("https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=baidu&wd=MapleSim&oq=16%26lt%3B&rsv_pq=dc29e59c00021bfb&rsv_t=7da99CAjYErFMrcp2TlNyFibWxpwOcSuhZwBrc7zAmVakZOv763A3JQFh0o&rqlang=cn&rsv_enter=0&inputT=6390&rsv_sug3=14&rsv_sug1=12&rsv_sug7=100&prefixsug=MapleSim&rsp=0&rsv_sug4=11113")
+getFormParams(chara)[[6]]
+
+```
+
+4. postForm
+```{r}
+
+```
+
+
+## Parse
+1. xpathSApply
+```{r}
+page_xpath <- htmlParse(webpage)
+```
+
+2. getNodesSet
+```{r}
+pagetree <- htmlTreeParse(webpage, error=function(...){}, useInternalNodes = TRUE,trim=TRUE)
+book_list <- getNodeSet(pagetree, '//table//a[@title]') 
+book_list
+```

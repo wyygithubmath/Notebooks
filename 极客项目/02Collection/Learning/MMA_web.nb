@@ -1,0 +1,140 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4401,        132]
+NotebookOptionsPosition[      3784,        105]
+NotebookOutlinePosition[      4141,        121]
+CellTagsIndexPosition[      4098,        118]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"htmlXML", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<http://www.qiushibaike.com/\>\"", ",", "\"\<XMLObject\>\""}],
+     "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"htmlHTML", "=", 
+   RowBox[{"Import", "[", 
+    RowBox[{"\"\<http://www.qiushibaike.com/\>\"", ",", "\"\<Source\>\""}], 
+    "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.6873051182317977`*^9, 3.687305140708434*^9}, 
+   3.687344380959647*^9, {3.6873885142628517`*^9, 3.687388520382617*^9}, {
+   3.687388601180262*^9, 3.687388607241384*^9}, {3.6873976751007996`*^9, 
+   3.687397721751439*^9}, 3.687397891342454*^9, {3.6876605049234033`*^9, 
+   3.6876605294315615`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"htmlHTML", ",", 
+    RowBox[{
+    "\"\<<div class=\\\"content\\\">\>\"", "~~", "__", "~~", 
+     "\"\<</div>\>\""}]}], "]"}], "//", "Length"}]], "Input",
+ CellChangeTimes->{{3.6876605695310946`*^9, 3.687660572679883*^9}, {
+  3.6876606722350264`*^9, 3.6876606851828327`*^9}, {3.6876607372042933`*^9, 
+  3.6876608919641857`*^9}, {3.6876609657607613`*^9, 3.6876609663242626`*^9}, {
+  3.687661569620358*^9, 3.687661615908983*^9}, {3.6876617147998705`*^9, 
+  3.6876617223484707`*^9}, {3.6876619988710365`*^9, 3.687662002730285*^9}}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{
+  3.6876605747338457`*^9, {3.687660811254648*^9, 3.687660854257262*^9}, 
+   3.6876608950076323`*^9, 3.687660969603281*^9, {3.687661580755003*^9, 
+   3.6876615875865426`*^9}, 3.6876616186498575`*^9, 3.687661718970113*^9, 
+   3.6876620053255434`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"urlParse", "=", 
+  RowBox[{
+  "URLParse", "[", "\"\<http://www.qiushibaike.com/8hr/page/0/?s=4927850\>\"",
+    "]"}]}]], "Input",
+ CellChangeTimes->{{3.6873443989944725`*^9, 3.6873444391554804`*^9}, {
+   3.687344535862548*^9, 3.6873445612675605`*^9}, 3.687344789408005*^9}],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"Scheme\"\>", "\[Rule]", "\<\"http\"\>"}], ",", 
+   RowBox[{"\<\"User\"\>", "\[Rule]", "None"}], ",", 
+   RowBox[{"\<\"Domain\"\>", "\[Rule]", "\<\"www.qiushibaike.com\"\>"}], ",", 
+   RowBox[{"\<\"Port\"\>", "\[Rule]", "None"}], ",", 
+   RowBox[{"\<\"Path\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"\"\>", ",", "\<\"8hr\"\>", ",", "\<\"page\"\>", 
+      ",", "\<\"35\"\>", ",", "\<\"\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"Query\"\>", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"\<\"s\"\>", "\[Rule]", "\<\"4927850\"\>"}], "}"}]}], ",", 
+   RowBox[{"\<\"Fragment\"\>", "\[Rule]", "None"}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{3.687344561788412*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"URLBuild", "[", "urlParse", "]"}]], "Input",
+ CellChangeTimes->{{3.6873445479880276`*^9, 3.687344554542611*^9}}],
+
+Cell[BoxData["\<\"http://www.qiushibaike.com/8hr/page/35/?s=4927850\"\>"], \
+"Output",
+ CellChangeTimes->{3.6873445562592726`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.6873447190797467`*^9, 3.6873447467826347`*^9}, {
+  3.687344807653715*^9, 3.687344840249612*^9}, {3.687661950993439*^9, 
+  3.687661955622733*^9}}]
+},
+WindowSize->{759, 601},
+WindowMargins->{{Automatic, 242}, {29, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e748\:670817\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 695, 15, 84, "Input"],
+Cell[CellGroupData[{
+Cell[1278, 39, 594, 11, 47, "Input"],
+Cell[1875, 52, 297, 5, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2209, 62, 297, 6, 47, "Input"],
+Cell[2509, 70, 756, 16, 50, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3302, 91, 136, 2, 47, "Input"],
+Cell[3441, 95, 130, 2, 30, "Output"]
+}, Open  ]],
+Cell[3586, 100, 194, 3, 30, "Input"]
+}
+]
+*)
+

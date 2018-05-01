@@ -1,0 +1,624 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21275,        616]
+NotebookOptionsPosition[     17889,        501]
+NotebookOutlinePosition[     18801,        532]
+CellTagsIndexPosition[     18723,        527]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ TogglerBox[2, {1->
+  OverlayBox[{
+   TagBox[GridBox[{
+      {
+       GraphicsBox[RasterBox[CompressedData["
+1:eJxTTMoPSmNiYGAo5gASQYnljkVFiZXBAkBOaF5xZnpeaopnXklqemqRRRIz
+UFAKiEGSLED8//9/gvjRo0fsN27cELp69arY+fPnpZExPn137tzhBqrRBGJ/
+ID4CxMfRMTZ9L168YL5w4YIaUD4AiC8C8Qcg/gvE/9AxFreC7PQD4gtA/BGq
+7j8ujKz3+fPnLFC9b6H24dSHTf/FixfVofYSpRdZPzSsAqBuJkovsn5oOF8k
+5F9s+h88eMBBjt0w/devXxcGso+S4m9k/ZcuXRKHpgeS3A7TD0wrkpToPw9J
+ywOmn1L3Uxp+lMYfpemH0vRLjfwDjQey8y9a+fGOWDPwlF+gsPhEKDywlZ8g
+d0D9EniexPITGd++fZv3PBnlN6764zxa3QHCAIDESDs=
+         "], {{0, 26}, {16, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{16, 26},
+        PlotRange->{{0, 16}, {0, 26}}], 
+       GraphicsBox[RasterBox[CompressedData["
+1:eJzt2V1vVFUUBuBGTfTSSygthYYKNHyVinrrpbcYfwBEJN5gUkyMfw9KKaVw
+KCkQKCW1RNIQKg1gEE3QtdN10pMRZCaBzNQ+kzxt5nzstfeZfbPOu/vkD8e/
+e6+vr+/sR/Hn+ImfvpyYOPHz1x/Hl2/OnP3+9JlT33515sdTp09NfHHy/TjY
+H6592Nf3QfyvqmpHBwbCYNr5GoMNAw2d1AEAADa3/obtLba1aJ7rb4xR9x1D
+YVfYHYbDnjASPgn7wv4wGg6Eg+FQOByOhLEwnj4Nx8Jn6fM21dcfyzHq8cay
+xuGseTDnMJpz2pdzHMk5D+caduWa6v6p+czafU71s6p1+/cGAADYqt52/9va
+++6tXt331j3v0TTeoj5e966v6lv3Vv/uWfWr9LJm9tzMpN+UW3eaVV9s00yY
+CzfC7bAQFhvuhjt57maYD9er9c+VcDlcCtMd1AQAADafqXQhTabz6VyL+vhk
+Xl/uLX1D6UFmw9VwrVrvL0o/cqta7ztKD3Iv/BLuh1/DSngYHoXfwlp4Ep6F
+38Pz8Ed4Ef5Mf71Gff5F3vM8x3iWY65ljUdZcyXncD/ndC/neDvnfCPXcC3X
+NJtrnG48r3afU/2s6uc11QO/OwAAwFbzLvrfksWVjK30kSV3KxncUlgOD6qN
+vnc1PK42+t7iaaq/r+U1q9VG3/ogx1rKse9krfmsrV+l15R9WDLmkjWXzLl8
+yvuVsmdLJl3eu5R9XN7BNLPrhTxX3seUvT3TQc2Xbfr7LWq3JgAAwH95m33K
+u9Dt5wMAAMDmp2dlK+vGnu/2+yQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYPN42aZu
+1AQAAAAAAICtrNsZIXRTN/b8xTbNhLlwI9wOC2Gx4W64k+duhvlwvVr/XAmX
+w6Uw3UFNAAAAAAAA6EVT6UKaTOfTuRb18cm8vtxbcrOSwc2Gq9V6FlcytlvV
+eu5WMrilsBwehJXwMKyGx2EtPElPU/19La9ZzXtWcozlHHMxa9zKmnM5h9mc
+03Rjfe2uq15bvb6pHvid2NzKPiwZc8maS+ZcPiWDLnu2ZNIlmy77uGTVzex6
+Ic+VbLvs7ZkOau7owEAYTDtfY7BhoKGTOgAAAAAAANDr+hu2t9jWonmuvzFG
+nbsNhd1hOOwJI2Fv2B9Gw4FwMBwKR8JYOJrGW9THx/LaQ3nvgRxrf449krWG
+s/ZQtZH3NdfY7rrqtdW6/fvw/9LMnpuZ9Jty646y6n8AhCP7tg==
+         "], {{0, 26}, {2000, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{2000, 26},
+        PlotRange->{{0, 2000}, {0, 26}}], 
+       GraphicsBox[RasterBox[CompressedData["
+1:eJy9lktLQkEUxyVdCBIELaxctYq+QduWbcKMPoCSRRsDC6JPp+Lj4vuq+EBc
+iBtFfIYrpU7nPzQiN++9vmrgp/dx5j8z55w5c099z56HPYvF8mLnH4/37TIY
+9L7fHvDNXeDl6THgv78KvPof/cELn5UfnjBHjI3J5/OudVBV9bhUKjmbzaad
+iCxmcB9lAxKMmzmv1+v7JvpfG/DJjJkic8NrOut0OlYdfdoCjPXBqMx1q9Vy
+7FhfgvX0MUa73bYZ6edyuTnrvPsZQ4Wv9PTRL5vNroTOGIiJu9FoOLT6UjuT
+yVAqlaJkMin+0+m0YPEZbHTGQDwKyKtl+ugHjdFoRIVCgeLxOCUSCQGua7Ua
+9Xo9YQNbozXI/aHVZ//RcDik2WxG5XKZwuGwANdo0JfrNIhDvFqtHi7zD+YW
+i8VoMBgIvWKxKEDrdrtiHbAxiAF8pHAf5zJ9+Bca0WiUxuMxydbv98U64CvY
+wNZgTyioI9r8QR/EEvrQUhRlrh8Kheb6sDHTZ1xG84ePMP/pdPpr/tvoL/of
+Mcb9Jv7X+mcxP2X+QCMSiYh5VyoVMQbXMbP81I2vzM/JZCLyX+a+BPmPvbFN
+fmr36pr713B/rVp7THy/tD6Y1cjF5zrahvVtB5jW5y21B/kVzpc1kecjfK53
+Pu7kfNfO+x+/T/70++ob7NUEtQ==
+         "], {{0, 26}, {24, 0}}, {0, 255},
+         ColorFunction->RGBColor],
+        BaseStyle->"ImageGraphics",
+        ImageSize->Magnification[1],
+        ImageSizeRaw->{24, 26},
+        PlotRange->{{0, 24}, {0, 26}}]}
+     },
+     AutoDelete->False,
+     GridBoxItemSize->{"Columns" -> {Automatic, 
+         Scaled[0.6], Automatic}},
+     GridBoxSpacings->{"Columns" -> {{0}}, "Rows" -> {{0}}}],
+    "Grid"], 
+   PaneBox[
+    StyleBox[
+     RowBox[{
+     "Background", " ", "images", " ", "and", " ", "text", " ", "colors", " ",
+       "have", " ", "been", " ", "adjusted", " ", "for", " ", "editing", " ", 
+      RowBox[{"purposes", "."}]}],
+     LineBreakWithin->False,
+     FontFamily->"Helvetica",
+     FontSize->12,
+     FontColor->GrayLevel[0.4]],
+    Alignment->Center,
+    ImageSize->Scaled[0.5],
+    ScrollPosition->{0., 0.}]},
+   Alignment->{Center, Center}], 2->""}, "1"]], "SlideShowNavigationBar", \
+"FirstSlide",
+ CellMargins->{{0, 0}, {0, 0}},
+ CellFrameLabelMargins->2,
+ CellSize->{Inherited, 30},
+ CellChangeTimes->{3.68231974709904*^9},
+ TextAlignment->Center,
+ CellTags->"SlideShowHeader"],
+
+Cell["Regular Expression", "Title",
+ CellChangeTimes->{
+  3.559948400406288*^9, {3.6823193202990713`*^9, 3.6823193356035967`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Search", "Section",
+ CellChangeTimes->{{3.682320013214725*^9, 3.6823200147909184`*^9}, {
+  3.682322581316785*^9, 3.682322582867773*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Text", "Subsection",
+ CellChangeTimes->{{3.682321152071113*^9, 3.682321153952238*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "text", "=", 
+   "\"\<https://www.elections.state.md.us/elections/2012/election_data/\
+Allegancy_County_2012_General.csv\>\""}], ";"}]], "Code",
+ CellChangeTimes->{{3.682321175376794*^9, 3.682321191440092*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:5355\:4e2a\:5b57\:7b26", "Subsection",
+ CellChangeTimes->{{3.682320425989202*^9, 3.68232043026649*^9}, {
+  3.682320472417295*^9, 3.68232047271706*^9}, {3.682397926768862*^9, 
+  3.682397928929549*^9}}],
+
+Cell[TextData[StyleBox["Pattern", "Item"]], "Item",
+ CellChangeTimes->{{3.6823200992011766`*^9, 3.682320134585844*^9}, {
+  3.682320229457328*^9, 3.6823202447655697`*^9}, {3.682320282201241*^9, 
+  3.6823202826696463`*^9}, {3.6823203161977386`*^9, 3.682320317462376*^9}, {
+  3.682320584957122*^9, 3.68232059536061*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "_"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "__"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "___"}], "]"}], ";"}]}], "Code",
+ CellChangeTimes->{{3.68232091801998*^9, 3.68232099752115*^9}, {
+  3.6823212278141212`*^9, 3.682321248972608*^9}, {3.682398264762559*^9, 
+  3.682398325572188*^9}, {3.6823984805213614`*^9, 3.682398508016507*^9}}],
+
+Cell[TextData[StyleBox["RegularExpression", "Item"]], "Item",
+ CellChangeTimes->{{3.6823200992011766`*^9, 3.682320134585844*^9}, {
+  3.682320229457328*^9, 3.6823202447655697`*^9}, {3.682320282201241*^9, 
+  3.6823202826696463`*^9}, {3.6823203161977386`*^9, 3.682320317462376*^9}, {
+  3.682320584957122*^9, 3.682320613006818*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<.\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<.*\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<.+\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<.?\>\"", "]"}]}], "]"}], 
+  ";"}]}], "Code",
+ CellChangeTimes->{{3.6823210248486357`*^9, 3.682321025014165*^9}, {
+  3.682321296913199*^9, 3.68232132859149*^9}, {3.682321978343405*^9, 
+  3.68232198584114*^9}, {3.6823220719238367`*^9, 3.682322098371846*^9}, {
+  3.682322148358748*^9, 3.682322154358652*^9}, {3.6823979380231667`*^9, 
+  3.6823979484493856`*^9}, {3.6823983404957657`*^9, 3.6823984219072742`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Number", "Subsection",
+ CellChangeTimes->{{3.682320425989202*^9, 3.68232043026649*^9}, {
+  3.682320472417295*^9, 3.68232047271706*^9}}],
+
+Cell[TextData[StyleBox["Pattern", "Item"]], "Item",
+ CellChangeTimes->{{3.6823200992011766`*^9, 3.682320134585844*^9}, {
+  3.682320229457328*^9, 3.6823202447655697`*^9}, {3.682320282201241*^9, 
+  3.6823202826696463`*^9}, {3.6823203161977386`*^9, 3.682320317462376*^9}, {
+  3.682320584957122*^9, 3.68232059536061*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "DigitCharacter"}], "]"}], ";"}], "\n", 
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", "NumberString"}], "]"}]}], "Code",
+ CellChangeTimes->{{3.68232091801998*^9, 3.68232099752115*^9}, {
+  3.6823212278141212`*^9, 3.682321248972608*^9}, {3.6823985785865383`*^9, 
+  3.6823986214220257`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"2012\"\>", ",", "\<\"2012\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.682320937515024*^9, 3.6823209995280952`*^9}, 
+   3.6823212520188007`*^9, 3.682397776498945*^9, {3.6823986028506603`*^9, 
+   3.682398624842379*^9}, 3.6900813359395037`*^9}]
+}, Open  ]],
+
+Cell[TextData[StyleBox["RegularExpression", "Item"]], "Item",
+ CellChangeTimes->{{3.6823200992011766`*^9, 3.682320134585844*^9}, {
+  3.682320229457328*^9, 3.6823202447655697`*^9}, {3.682320282201241*^9, 
+  3.6823202826696463`*^9}, {3.6823203161977386`*^9, 3.682320317462376*^9}, {
+  3.682320584957122*^9, 3.682320613006818*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<[0-9]\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<\\\\d\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", 
+   RowBox[{"RegularExpression", "[", "\"\<[0-9]+\>\"", "]"}]}], 
+  "]"}]}], "Code",
+ CellChangeTimes->{{3.6823210248486357`*^9, 3.682321025014165*^9}, {
+  3.682321296913199*^9, 3.68232132859149*^9}, {3.682321978343405*^9, 
+  3.68232198584114*^9}, {3.6823220719238367`*^9, 3.682322098371846*^9}, {
+  3.682322148358748*^9, 3.682322154358652*^9}, {3.682398661918407*^9, 
+  3.6823986877825603`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"2012\"\>", ",", "\<\"2012\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.682322088683444*^9, 3.682397776613441*^9, 
+  3.682398688802414*^9, 3.690081335970796*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Alphabeta", "Subsection",
+ CellChangeTimes->{{3.6823205284558363`*^9, 3.68232053654582*^9}, {
+  3.682320739701118*^9, 3.68232074837685*^9}}],
+
+Cell["Pattern", "Item",
+ CellChangeTimes->{{3.682320574902239*^9, 3.682320578638576*^9}, {
+  3.682320618798706*^9, 3.682320654944804*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "LetterCharacter"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "WordCharacter"}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Characters", "[", "text", "]"}], ";"}]}], "Code",
+ CellChangeTimes->{{3.682320693266261*^9, 3.6823207249210043`*^9}, {
+   3.682321471768219*^9, 3.682321489603696*^9}, 3.682321866026739*^9, {
+   3.68239874960959*^9, 3.682398889451758*^9}}],
+
+Cell["RegularExpression", "Item",
+ CellChangeTimes->{{3.682320574902239*^9, 3.682320578638576*^9}, {
+  3.682320618798706*^9, 3.68232062764156*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<[a-z]\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<\\\\w\>\"", "]"}]}], "]"}], 
+  ";"}]}], "Code",
+ CellChangeTimes->{{3.68232184109019*^9, 3.6823219655408382`*^9}, {
+   3.682322200231401*^9, 3.682322202031126*^9}, 3.682398938663947*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Spec", "Subsection",
+ CellChangeTimes->{{3.6823222596994762`*^9, 3.682322261684461*^9}}],
+
+Cell["Pattern", "Item",
+ CellChangeTimes->{{3.682322289104303*^9, 3.682322291217224*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", "WhitespaceCharacter"}], "]"}], ";"}]], "Code",
+ CellChangeTimes->{
+  3.682322330520006*^9, {3.682398959084447*^9, 3.682398968318384*^9}, 
+   3.682399000360629*^9}],
+
+Cell["RegularExpression", "Item",
+ CellChangeTimes->{{3.682322301643878*^9, 3.682322308666903*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<\\\\s\>\"", "]"}]}], "]"}], 
+  ";"}]], "Code",
+ CellChangeTimes->{{3.6823223347142344`*^9, 3.682322358395858*^9}, {
+  3.682322403287945*^9, 3.682322405935413*^9}, {3.6823989795648813`*^9, 
+  3.6823989976053543`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:8bcd\:9996\:8bcd\:5c3e", "Subsection",
+ CellChangeTimes->{{3.6823222596994762`*^9, 3.682322261684461*^9}, {
+  3.682322425039743*^9, 3.682322454407216*^9}}],
+
+Cell["Pattern", "Item",
+ CellChangeTimes->{{3.682322289104303*^9, 3.682322291217224*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"StartOfString", "~~", "\"\<h\>\""}]}], "]"}], ";"}], "\n", 
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", 
+   RowBox[{"WordBoundary", "~~", "\"\<el\>\""}]}], "]"}]}], "Code",
+ CellChangeTimes->{
+  3.682322330520006*^9, 3.682399135469067*^9, {3.682399165551807*^9, 
+   3.682399219710301*^9}, {3.6823993173072166`*^9, 3.682399341649605*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"el\"\>", ",", "\<\"el\"\>", ",", "\<\"el\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.6823991951983633`*^9, 3.682399222261117*^9}, 
+   3.682399344625144*^9, 3.6900813360332613`*^9}]
+}, Open  ]],
+
+Cell["RegularExpression", "Item",
+ CellChangeTimes->{{3.682322301643878*^9, 3.682322308666903*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", 
+   RowBox[{"RegularExpression", "[", "\"\<\\\\Ahttp\>\"", "]"}]}], 
+  "]"}], "\n", 
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", 
+   RowBox[{"RegularExpression", "[", "\"\<\\\\bel\>\"", "]"}]}], 
+  "]"}]}], "Code",
+ CellChangeTimes->{{3.6823223347142344`*^9, 3.682322358395858*^9}, {
+  3.682322403287945*^9, 3.682322405935413*^9}, {3.682322463736904*^9, 
+  3.682322534029016*^9}, {3.682332307772461*^9, 3.68233233470989*^9}, {
+  3.682332374384322*^9, 3.68233243750377*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"http\"\>", "}"}]], "Output",
+ CellChangeTimes->{{3.682322479161569*^9, 3.6823225358040533`*^9}, {
+   3.682332311832315*^9, 3.682332339168455*^9}, {3.682332378525819*^9, 
+   3.682332440537383*^9}, 3.682397777061685*^9, 3.690081336048891*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"el\"\>", ",", "\<\"el\"\>", ",", "\<\"el\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.682322479161569*^9, 3.6823225358040533`*^9}, {
+   3.682332311832315*^9, 3.682332339168455*^9}, {3.682332378525819*^9, 
+   3.682332440537383*^9}, 3.682397777061685*^9, 3.6900813360645533`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\:5355\:4e2a\:5b57\:7b26", "Subsection",
+ CellChangeTimes->{{3.6823222596994762`*^9, 3.682322261684461*^9}, {
+  3.682322425039743*^9, 3.682322454407216*^9}, {3.682322611098925*^9, 
+  3.682322613745949*^9}}],
+
+Cell["Pattern", "Item",
+ CellChangeTimes->{{3.682322289104303*^9, 3.682322291217224*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"StringCases", "[", 
+   RowBox[{"text", ",", 
+    RowBox[{"RegularExpression", "[", "\"\<\\\\d\>\"", "]"}]}], "]"}], 
+  ";"}]], "Code",
+ CellChangeTimes->{3.682322330520006*^9}],
+
+Cell["RegularExpression", "Item",
+ CellChangeTimes->{{3.682322301643878*^9, 3.682322308666903*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", 
+   RowBox[{"RegularExpression", "[", "\"\<h.t\>\"", "]"}]}], "]"}], "\n", 
+ RowBox[{"StringCases", "[", 
+  RowBox[{"text", ",", 
+   RowBox[{"RegularExpression", "[", "\"\<h..p\>\"", "]"}]}], "]"}]}], "Code",
+ CellChangeTimes->{{3.6823223347142344`*^9, 3.682322358395858*^9}, {
+  3.682322403287945*^9, 3.682322405935413*^9}, {3.682322463736904*^9, 
+  3.682322534029016*^9}, {3.6823226243190403`*^9, 3.68232273808549*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"htt\"\>", "}"}]], "Output",
+ CellChangeTimes->{{3.682322479161569*^9, 3.6823225358040533`*^9}, {
+   3.6823226317750483`*^9, 3.682322741111725*^9}, 3.682397777262878*^9, 
+   3.6900813360958014`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", "\<\"http\"\>", "}"}]], "Output",
+ CellChangeTimes->{{3.682322479161569*^9, 3.6823225358040533`*^9}, {
+   3.6823226317750483`*^9, 3.682322741111725*^9}, 3.682397777262878*^9, 
+   3.6900813360958014`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Cases", "Section",
+ CellChangeTimes->{{3.682320025151231*^9, 3.682320027070092*^9}}],
+
+Cell["\<\
+Text lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam \
+nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. \
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit \
+lobortis nisl ut aliquip ex ea commodo consequat.\
+\>", "Text"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Here", "[", "]"}]], "Input",
+ CellChangeTimes->{{3.690081315624854*^9, 3.6900813305639715`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GeoPosition", "[", 
+   RowBox[{"{", 
+    RowBox[{"37.730000000000004`", ",", "112.47`"}], "}"}], "]"}], "[", 
+  "]"}]], "Output",
+ CellChangeTimes->{3.6900813386585417`*^9}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{930, 514},
+WindowMargins->{{Automatic, 141}, {Automatic, 59}},
+TaggingRules->{
+ "SlideShow" -> True, "SlideshowSettings" -> {"Toolbar" -> True}},
+TooltipBoxOptions->{TooltipDelay->Automatic},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (2016\:5e748\:670817\
+\:65e5)",
+StyleDefinitions->FrontEnd`FileName[{"SlideShow"}, "Garnet.nb", 
+  CharacterEncoding -> "UTF-8"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[580, 22, 4355, 95, 79, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5105, 126, 64, 1, 78, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[17004, 469, 64, 1, 78, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 18433, 517}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 4355, 95, 79, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[4938, 119, 130, 2, 220, "Title"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5105, 126, 64, 1, 78, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5194, 131, 142, 2, 104, "Section"],
+Cell[CellGroupData[{
+Cell[5361, 137, 92, 1, 75, "Subsection"],
+Cell[5456, 140, 247, 6, 55, "Code"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5740, 151, 208, 3, 75, "Subsection"],
+Cell[5951, 156, 317, 4, 44, "Item"],
+Cell[6271, 162, 511, 12, 114, "Code"],
+Cell[6785, 176, 328, 4, 44, "Item"],
+Cell[7116, 182, 984, 25, 143, "Code"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8137, 212, 141, 2, 75, "Subsection"],
+Cell[8281, 216, 317, 4, 44, "Item"],
+Cell[CellGroupData[{
+Cell[8623, 224, 376, 8, 85, "Code"],
+Cell[9002, 234, 289, 5, 35, "Output"]
+}, Open  ]],
+Cell[9306, 242, 328, 4, 44, "Item"],
+Cell[CellGroupData[{
+Cell[9659, 250, 772, 19, 114, "Code"],
+Cell[10434, 271, 206, 4, 35, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[10689, 281, 146, 2, 75, "Subsection"],
+Cell[10838, 285, 138, 2, 44, "Item"],
+Cell[10979, 289, 486, 11, 114, "Code"],
+Cell[11468, 302, 147, 2, 44, "Item"],
+Cell[11618, 306, 464, 12, 85, "Code"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12119, 323, 94, 1, 75, "Subsection"],
+Cell[12216, 326, 89, 1, 44, "Item"],
+Cell[12308, 329, 243, 6, 55, "Code"],
+Cell[12554, 337, 99, 1, 44, "Item"],
+Cell[12656, 340, 339, 8, 55, "Code"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13032, 353, 163, 2, 75, "Subsection"],
+Cell[13198, 357, 89, 1, 44, "Item"],
+Cell[CellGroupData[{
+Cell[13312, 362, 440, 10, 85, "Code"],
+Cell[13755, 374, 231, 5, 35, "Output"]
+}, Open  ]],
+Cell[14001, 382, 99, 1, 44, "Item"],
+Cell[CellGroupData[{
+Cell[14125, 387, 550, 12, 85, "Code"],
+Cell[14678, 401, 273, 4, 35, "Output"],
+Cell[14954, 407, 327, 6, 35, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15330, 419, 212, 3, 75, "Subsection"],
+Cell[15545, 424, 89, 1, 44, "Item"],
+Cell[15637, 427, 211, 6, 55, "Code"],
+Cell[15851, 435, 99, 1, 44, "Item"],
+Cell[CellGroupData[{
+Cell[15975, 440, 489, 9, 85, "Code"],
+Cell[16467, 451, 230, 4, 35, "Output"],
+Cell[16700, 457, 231, 4, 35, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17004, 469, 64, 1, 78, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[17093, 474, 90, 1, 104, "Section"],
+Cell[17186, 477, 307, 5, 199, "Text"],
+Cell[CellGroupData[{
+Cell[17518, 486, 120, 2, 59, "Input"],
+Cell[17641, 490, 208, 6, 68, "Output"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

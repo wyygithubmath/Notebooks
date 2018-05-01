@@ -1,0 +1,25 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Factor
+
+```{r}
+train <- read.csv('./train.csv', stringsAsFactors = FALSE)
+```
+
+> factor(x, levels, labels=levels,ordered=)
+
+```{r}
+sex <- factor(train$Sex)
+```
+
+### cut
+```{r}
+age_labels <- cut(train$Age, breaks=c(0,20,70,100), labels=c("Young","Adult","Old"), include.lowest=TRUE,ordered=TRUE)
+# quantile
+qa <- quantile(train$Age, c(0,0.2,0.7,1.0), na.rm = TRUE)
+age_qu <- cut(train$Age, breaks=qa, labels=c("Young","Adult","Old"), include.lowest=TRUE,ordered=TRUE)
+```
+

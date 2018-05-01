@@ -1,0 +1,86 @@
+---
+title: "kNN_R"
+author: "wyy"
+date: "July 19, 2016"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Packages
+
+```{r }
+library(class)
+library(ggplot2)
+```
+
+## Import Data
+
+```{r}
+# set path
+getwd()
+setwd("C:/Users/wyy/Documents/GitHub/data/archives/pricticesdata/machinelearninginaction/1")
+# data
+kNN_R <- read.csv("datingTestSet.csv", header = FALSE, col.names = c("a", "b", "c", "d"))
+```
+
+## Data
+
+```{r}
+head(kNN_R)
+summary(kNN_R)
+```
+
+## own
+
+```{r}
+n <- nrow(kNN_R)
+set.seed(1)
+# random select 80%
+my_indices <- sort(sample(1:n, n*(4/5)))
+# set train set
+my_training_x <- kNN_R[indices, 1:3]
+# computing distance
+# input dataframe 
+distance_matrix <- function(df){
+  distance <- matrix(rep(NA, nrow(df)^2), nrow = nrow(df))
+  for (i in nrow(df)) {
+    for (j in nrow(df)) {
+      distance[i, j] <- sqrt((df[i, "X"] - df[j, "X"])^2 + (df[i, "Y"] - df[j, "Y"])^2)
+    }
+  }
+  return(distance)
+}
+# distance ordered
+k_nearest_neighbors <- function(i, distance, k = 5){
+  return(order(distance[i, ])[2:(k+1)])
+}
+# set test set
+my_test_x <- kNN_R[-indices, 1:3]
+# set label
+my_training_y <- kNN_R[indices, 4]
+# pridict
+my_test_y <- kNN_R[-indices, 4]
+```
+
+## R library "class""
+class
+```{r}
+n <- nrow(kNN_R)
+set.seed(1)
+indices <- sort(sample(1:n, n*(4/5)))
+training_x <- kNN_R[indices, 1:3]
+test_x <- kNN_R[-indices, 1:3]
+training_y <- kNN_R[indices, 4]
+test_y <- kNN_R[-indices, 4]
+# training_set, test_set, training_set_labels
+predicted_y <- knn(training_x, test_x, training_y, k = 5)
+sum(predicted_y != test_y)
+length(test_y)
+sum(predicted_y != test_y) / (1000 - length(test_y))
+```
+
+
+
