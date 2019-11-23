@@ -1,14 +1,11 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-
-# ---------------------
-# file name : python_knn_read
-# author : wyy
-# data : 2017-01-10
-# function : kNN
-# ---------------------
-
-
+"""
+file name : python_knn_read
+author : wyy
+data : 2017-01-10
+function : kNN
+"""
 __author__ = 'wyy'
 
 import numpy as np
@@ -16,15 +13,15 @@ import operator
 
 
 # import data
-def readData(filePath):
-    with open(filePath) as dataFile:
-        dataTXT = dataFile.readlines()
-    numLin = len(dataTXT)
-    numCol = len(dataTXT[0].strip().split('\t'))
+def read_data(file_path):
+    with open(file_path) as dataFile:
+        data_txt = dataFile.readlines()
+    numLin = len(data_txt)
+    numCol = len(data_txt[0].strip().split('\t'))
     dataMat = np.zeros((numLin, (numCol - 1)))
     dataLabel = []
     index = 0
-    for line in dataTXT:
+    for line in data_txt:
         line = line.strip()
         listFromLime = line.split('\t')
         dataMat[index, :] = listFromLime[0:(numCol - 1)]
