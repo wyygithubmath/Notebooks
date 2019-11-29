@@ -1,27 +1,23 @@
 clear
 clc
 
-center =0.5 - 0*1i;
 grid = 1024;
-width = 3;
-depth = 512;
-
+width = 0.1;
 s = width*(-1:1/grid:1);
+center =-0.7700 - 0.1300*1i;
 [u,v] = meshgrid(s+real(center),s+imag(center));
 
 z0 = u + 1i*v;
-[r, c] = size(z0);
-depth_0 = depth*ones(r, c);
 
 z1 = gpuArray(z0);
-depth_1 = gpuArray(depth_0);
+depth = ones
 tic
-kzgpu = arrayfun(@mandelbrot,z1,depth_1);
+kzgpu = arrayfun(@mandelbrot,z1);
 toc
 
 
 % tic
-% kzcpu = arrayfun(@mandelbrot,z0, depth_0);
+% kzcpu = arrayfun(@mandelbrot,z0);
 % toc
 
 image(kzgpu)
