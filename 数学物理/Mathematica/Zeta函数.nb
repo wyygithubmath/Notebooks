@@ -1,0 +1,204 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6763,        194]
+NotebookOptionsPosition[      6104,        173]
+NotebookOutlinePosition[      6460,        189]
+CellTagsIndexPosition[      6417,        186]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"point", "=", 
+  RowBox[{"Table", "[", 
+   RowBox[{
+    RowBox[{"Zeta", "[", 
+     RowBox[{"1", "+", 
+      RowBox[{"t", "*", "I"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"t", ",", 
+      RowBox[{"-", "10"}], ",", "10"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.786394670261677*^9, 3.786394736016374*^9}, 
+   3.7863948410112677`*^9, {3.786394885202217*^9, 3.786394885936254*^9}, {
+   3.7863949535198374`*^9, 3.7863949546790075`*^9}, {3.7863949882289295`*^9, 
+   3.78639498935793*^9}},
+ CellLabel->"In[14]:=",ExpressionUUID->"fa65709b-0017-423a-ba12-f82aee600ab7"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"10", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"9", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"8", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"7", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"6", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"5", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"4", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"3", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", 
+     RowBox[{"2", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "-", "\[ImaginaryI]"}], "]"}], ",", "ComplexInfinity", ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", "\[ImaginaryI]"}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"2", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"3", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"4", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"5", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"6", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"7", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"8", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"9", " ", "\[ImaginaryI]"}]}], "]"}], ",", 
+   RowBox[{"Zeta", "[", 
+    RowBox[{"1", "+", 
+     RowBox[{"10", " ", "\[ImaginaryI]"}]}], "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.786394841496995*^9, {3.786394880106242*^9, 3.786394888946744*^9}, 
+   3.7863949571890354`*^9, 3.7863949924874997`*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"188cc838-aabf-4af5-afcb-045605fbf008"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Re", "[", "point", "]"}], ",", 
+      RowBox[{"Im", "[", "point", "]"}]}], "}"}], "]"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0"}], "}"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.786394740291403*^9, 3.7863948319572287`*^9}, {
+  3.7863948968151417`*^9, 3.7863949340460653`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"cd511391-26df-4f9e-86f2-715189638932"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {
+    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[0.012833333333333334`],
+      AbsoluteThickness[1.6], PointBox[CompressedData["
+1:eJxTTMoPSmViYGAQAWIQvTD+2Yu5dt/sdScyWj2U2mO/1WyWA3/+V/v97xRU
+vkft378jmHk+i/xn+48MHL82Xbyw307q1/EFWR/s1dXT5RbnXd6/7PUJdUOW
+N/bdjzQrnwlf3H/6nea7zcEv7Atq1jduuHVs/x418cyLR57aP+WzK/vAtma/
+Rcrr1b3yT+zjFn3l6mjebX9N/rucjspj+82nXx4+2XLN/u+s8g+cCx/Z31nG
+ErRvxVt0/n409ejmodtnj+YeezT32qP5xx7Nv+jhYY8WXvsBrOKqbg==
+      "]]}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}, {
+     {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
+      0.012833333333333334`], AbsoluteThickness[1.6]}, {}}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{None, None},
+  AxesOrigin->{0., 0.},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  Method->{
+   "OptimizePlotMarkers" -> True, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Identity[#]& )[
+         Part[#, 1]], 
+        (Identity[#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0., 1.3902873132374014`}, {-0.9268485643308071, 
+   0.9268485643308071}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{
+     Scaled[0.02], 
+     Scaled[0.02]}, {
+     Scaled[0.05], 
+     Scaled[0.05]}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{
+  3.7863947934109125`*^9, 3.786394834781989*^9, {3.786394891807764*^9, 
+   3.7863949370141993`*^9}, {3.786394967683339*^9, 3.7863949955538163`*^9}},
+ CellLabel->"Out[15]=",ExpressionUUID->"b7b6c2bb-1a53-4ece-bb3f-047df7650987"]
+}, Open  ]]
+},
+WindowSize->{759, 697},
+WindowMargins->{{169, Automatic}, {Automatic, 28}},
+FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (2019\:5e744\:67088\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 604, 14, 45, "Input",ExpressionUUID->"fa65709b-0017-423a-ba12-f82aee600ab7"],
+Cell[1187, 38, 2349, 64, 90, "Output",ExpressionUUID->"188cc838-aabf-4af5-afcb-045605fbf008"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3573, 107, 536, 13, 45, "Input",ExpressionUUID->"cd511391-26df-4f9e-86f2-715189638932"],
+Cell[4112, 122, 1976, 48, 266, "Output",ExpressionUUID->"b7b6c2bb-1a53-4ece-bb3f-047df7650987"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
